@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --Menu-color: #87BA91;
+    --Home-color: #FFF9F3;
+    --fonte-de-texto: Lato;
+    --fonte-de-titulo: Fredoka;
+
+}
+body{
+    height:100%
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+
+}
+.flex{
+    display: flex;
+    gap: 50rem;
+
+}
+h2.titulo{
+    color: black;
+    font-size: 40px;
+    text-align:center;
+    font-family: var(--fonte-de-titulo);
+    letter-spacing: 1px;
+
+}
+header{
+    padding: 5px 4%;
+    background: var(--Menu-color);
+   
+
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.logo{
+    width: 150px;
+  
+}
+.icon{
+    width: 120px;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.usuario p{
+    font-size: 18px;
+    font-family: var(--fonte-de-texto);
+    color: white;
+
+}
+
+section{
+    background-color: var(--Home-color);
+    height: 100vh;
+    
+}
+.flex .container{
+    display: flex;
+    gap: 20rem;
+    
+}
+.funcoes{
+    width: 100vh;
+    background-color:#7CC68A ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px 10px 10px 50px;
+    border-radius: 20px;
+    border: solid 1px black;
+    
+}
+ .funcoes a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-de-texto);
+    font-size: 15px;
+    
+
+ }
+ .funcoes a:hover{
+    color: #FFF1E2;
+    transform: scale(1.10);
+ }
+ .lista_professores {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 50px;
+    max-height: 500px; /* Define um tamanho máximo para o contêiner */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+    width: 300px; /* Define uma largura fixa para o contêiner */
+    margin: 0 auto;
+    border: solid 1px black; /* Centraliza o contêiner na página */
+}
+ .lista_professores  h2{
+   font-family: var(--fonte-de-titulo);
+   letter-spacing: 2px;
+   
+
+ }
+ .lista_professores ul li{
+    padding: 10px;
+    list-style: none;
+    font-family: var(--fonte-de-texto);
+
+ }
+ .container .lista_professores{
+    margin: auto;
+ 
+ }
+ button{
+    background-color: #7CC68A ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+ }
+
+ #funcoes{
+    height: 100vh;
+ }
+
+ footer{
+    display: flex;
+    background-color: #7CC68A;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+ }
+
+
+
+
+
+
+
+
+
